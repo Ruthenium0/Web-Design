@@ -1,4 +1,5 @@
-import PersonalPageModel from './model/PersonalPageModel.js';
+// TODO
+/*import PersonalPageModel from './model/PersonalPageModel.js';
 import PersonalPageView from './view/PersonalPageView.js';
 import PersonalPageController from './controller/PersonalPageController.js';
 
@@ -11,3 +12,4 @@ var controller = new PersonalPageController(PersonalPageModel, PersonalPageView)
 
 window.controller = controller
 
+*/
