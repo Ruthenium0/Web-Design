@@ -1,16 +1,16 @@
 export default class RegisterController {
-	constructor(registerModel, registerView) {
-		this.registerModel = registerModel;
-		this.registerView = registerView;
-		this.registerModel.setOnChangeCallback((e) => this.onChangeCallback(e));
-		this.registerView.setOnChangeCallback((e) => this.onChangeCallback(e));
+	constructor(RegisterModel, RegisterView) {
+		this.RegisterModel = RegisterModel;
+		this.RegisterView = RegisterView;
+		this.RegisterModel.setOnChangeCallback((e) => this.onChangeCallback(e));
+		this.RegisterView.setOnChangeCallback((e) => this.onChangeCallback(e));
 		
 		this.initOnModelChange();
 	}
 
 	onChangeCallback(obj) {
 		/* updates UI when a model has changed (title, done attributes) */
-		this.registerView.onUpdate(!this.registerModel.is_valid)
+		this.RegisterView.onUpdate(!this.RegisterModel.is_valid)
 	}
 
 
@@ -32,6 +32,6 @@ export default class RegisterController {
 				return object[property]; // don't need to return
 			}
 		}
-		this.registerModel = new Proxy(this.registerModel, handler);
+		this.RegisterModel = new Proxy(this.RegisterModel, handler);
 	}
 }
