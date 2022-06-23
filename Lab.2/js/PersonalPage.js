@@ -1,15 +1,15 @@
-// TODO
-/*import PersonalPageModel from './model/PersonalPageModel.js';
-import PersonalPageView from './view/PersonalPageView.js';
-import PersonalPageController from './controller/PersonalPageController.js';
+import PersonalPageArrayModel from './model/PersonalPageArrayModel.js';
+import PersonalPageArrayView from './view/PersonalPageArrayView.js';
+import PersonalPageArrayController from './controller/PersonalPageArrayController.js';
 
+var PersonalPageArrayModel = new PersonalPageArrayModel();
+var PersonalPageArrayView = new PersonalPageArrayView(PersonalPageArrayModel);
 
-var PersonalPageModel = new PersonalPageModel();
-var PersonalPageView = new PersonalPageView(PersonalPageModel);
-
-var controller = new PersonalPageController(PersonalPageModel, PersonalPageView);
-
+var controller = new PersonalPageArrayController(PersonalPageArrayModel, PersonalPageArrayView);
 
 window.controller = controller
 
-*/
+controller.addRow("Name", "?")
+controller.addRow("Birth_date", "?")
+controller.addRow("Sex", "?")
+controller.addRow("Email", "?")
